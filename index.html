@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Redação Técnica- Filme Snowden</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <p>Este site coleta dados pessoais. Ao prosseguir, você concorda com nossa <a href="">política de privacidade.</a></p>
+            <button onclick="">Concordo</button>
+        </div>
+        
+    <h1>Como lidar com dados sensíveis</h1>
+    <h3>Referente ao filme Snowden</h3>
+    <p>Ao lidar com dados sensíveis em sites e sistemas, é importante que o programador front-end adote medidas de segurança para proteger a privacidade dos usuários. Dados como CPF, endereço, e-mail e nome completo são considerados sensíveis, pois podem ser utilizados em fraudes, roubo de identidade ou outras formas de violação de privacidade. Por isso, o uso do protocolo HTTPS é indispensável, garantindo que as informações trafeguem pela internet de forma criptografada, evitando interceptações.<br> Também é responsabilidade do front-end garantir que o usuário seja claramente informado sobre como seus dados serão utilizados. Isso pode ser feito por meio de banners, modais ou links para a política de privacidade, que expliquem a finalidade da coleta de dados.</p>
+    <hr>
+    <h2> Campo de dados sensíveis:</h2>
+<form>
+<!-- CPF/CNPJ: é um dado pessoal e identificador único no Brasil--> 
+ <label for="">CPF/CNPJ</label>
+ 
+<input type= "text" name="cpf-cnpj" placeholder="CPF-CNPJ"> 
+<!-- Nome completo: é um dado pessoal básico, podendo ser usado para identificação--> 
+<label for="">Nome</label>
+<input type= "text" name="nome" placeholder= "Nome"> 
+<!-- O campo E-mail pode ser usado em ataques se for exposto -->
+<label for="">E-mail</label>
+<input type="email" name="email" placeholder="E-mail">
+<!-- Endereço Residencial: é um dado sensível por ser informado a localização--> 
+<label for="">Endereço</label>
+<input type= "text" name="endereço" placeholder= "Endereco"> 
+<button>Enviar</button>
+</form>
+<h2>Lista de cuidados necessários</h2>
+<div class="cuidados">
+<ul>
+    <li>Informar o usuário sobre como os dados serão usados</li>
+    <li>Utilizar HTTPS sempre que houver envio de dados (Back-end)</li>
+    <li>Evitar armazenar senhas em campos visíveis</li>
+    <li>Nunca salvar dados sensíveis no LocalStorage</li>
+    <li>Mascarar campos sensíveis como CPF, telefone e cartão</li>
+    <li>Evitar expor dados confidenciais no console do navegador ou no código-fonte</li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>
